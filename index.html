@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Our Corporate Website For our Group Assignment IML254">
+  <meta name="keywords" content="HTML, CSS, JavaScript, Personal Website, IML254">
+  <meta name="author" content="Imeer Hafiz IsyraF">
+  <meta name="author" content="Amir Yahya Bin Baharum">
+  <meta name="author" content="Muhammad Hilmi Bin Mohd Hisham">
+  <meta name="author" content="Aina Batrisyia Syahmi Binti Aminudin">
+  <title>Happy Birthday <3 </title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="icon.png">
+</head>
+
+<body>
+
+  <audio id="background-music" autoplay loop>
+    <source src="background.mp3" type="audio/mpeg">
+  </audio>
+
+  <main>
+
+    <!--
+      - BANNER
+    -->
+
+    <section id="home" class="home">
+      <div class="slider-item">
+        <div class="banner-content">
+          <p class="banner-subtitle" style="display: inline-block; color: #ffffff; font-size: 2.5rem;"> Happy Birthday
+            <span style="color:#FFB6C1; margin-left: 3px;">My Love</span>
+          </p>
+          <h2 class="banner-title">Happy Birthday, my love! 🥰 I made this to make your special day a bit brighter, may your day be as beautiful and amazing as you are. ❤️🎉</h2>
+          <a href="#container" class="banner-btn">Special Message</a>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+    <section id="container" style="background-color: pink; padding: 50px 0; width: 100%; position: relative;">
+      <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center; position: relative;">
+        <!-- GIF at the bottom -->
+        <img src="message gif.gif" alt="Birthday Gif" 
+          style="position: absolute; bottom: 20px; right: 20px; width: 150px; height: auto; z-index: 10;">
+    
+        <!-- Birthday message content -->
+        <h1 class="section-title" style="text-decoration: underline;">Birthday Message</h1>
+        <p id="birthday-message" style="font-size: 1.2rem; line-height: 1.8; color: #333; text-align: left;">
+          <span style="font-weight: bold;">Dear My Love,</span>
+          <br><br>
+          Happy Birthday, my love! Today, I want to celebrate not just your special day but everything that makes you the incredible, beautiful person you are. You’ve brought so much light into my life, and I feel like the luckiest person alive to be by your side.<br><br>
+
+          Every single moment with you feels like a blessing. You have this way of making me feel like I’m the center of your world, and I can’t even begin to express how much that means to me. Whether we’re laughing until our stomachs hurt or just enjoying the peace of being together, every second with you is something I cherish deeply.<br><br>
+    
+          I’ve always admired your strength and determination. Watching you put your heart and soul into everything you do, whether it’s your studies, your passions, or just being there for the people you love, leaves me in awe. You inspire me to be better every day. Seeing how far you’ve come and all the incredible things you’ve achieved fills me with pride. I have no doubt that this is just the beginning of even greater things for you.<br><br>
+    
+          But what makes me fall in love with you over and over again is your beautiful heart. You’re one of the kindest and most genuine people I’ve ever met. The way you go out of your way to help others, your ability to bring comfort with just a few words, and the quiet confidence you carry yourself with, it’s all so uniquely *you*. You make the world around you brighter, and you’ve definitely done that for me.<br><br>
+    
+          Being with you feels like home. In your arms, I’ve found my safe haven—a place where I feel completely loved and understood. You’ve shown me what it truly means to be cared for, not just with words but with every little thing you do. I hope you know how much that means to me and how deeply I treasure you.<br><br>
+    
+          And let’s not forget how stunningly beautiful you are. Your smile is my favorite thing in the world; it lights up even my darkest days. Sometimes, I catch myself just staring at you, amazed that someone so perfect is mine. Your laugh, your expressions, your little quirks—they’re all etched into my heart.<br><br>
+    
+          Today, I want to remind you how much you mean to me. You’re not just my love, my partner, and my best friend; you’re the reason my life is so full of joy and purpose. Thank you for being you, for loving me, and for letting me love you in return.<br><br>
+    
+          Here’s to you, my love, on your special day and every day. I hope this year brings you all the happiness, success, and love you deserve. And I promise, no matter what, I’ll always be here, loving you, supporting you, and cheering you on.<br><br>
+          <span style="font-weight: bold;">From your baby,</span>
+          <br>
+          <span style="font-family: 'Dancing Script', cursive; font-size: 1.5rem; color: #c54848;">Imeer</span>
+        </p>
+      </div>
+    </section>    
+  
+    <!-- Custom JS -->
+    <script>
+      // Display last modified date
+      window.onload = function() {
+          var latestDate = new Date(document.lastModified);
+          var formattedDate = latestDate.toLocaleString();
+          document.getElementById("lastModified").innerHTML = 
+              "© 2024 Authentic Atelier. All rights reserved. Last update: " + formattedDate;
+      };
+
+      // Adjust background music volume
+      document.addEventListener("DOMContentLoaded", function() {
+          const backgroundMusic = document.getElementById('background-music');
+          if (backgroundMusic) {
+              backgroundMusic.volume = 0.3; // Set volume level (0.0 to 1.0)
+          } else {
+              console.warn('Background music element not found.');
+          }
+      });
+  </script>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
